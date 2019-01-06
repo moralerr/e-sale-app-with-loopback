@@ -1,7 +1,7 @@
 {
   "db": {
     "host": "local",
-    "port": 3000,
+    "port": 3306,
     "url": "",
     "database": "mydb",
     "password": "mypassword",
