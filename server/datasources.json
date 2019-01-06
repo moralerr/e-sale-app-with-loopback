@@ -1,6 +1,6 @@
 {
   "db": {
-    "host": 172.17.0.3,
+    "host": "mysql",
     "port": 3306,
     "url": "",
     "database": "mydb",
