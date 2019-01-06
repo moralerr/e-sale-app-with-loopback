@@ -1,6 +1,12 @@
 {
   "db": {
-    "name": "db",
-    "connector": "memory"
+    "host": "local",
+    "port": 3000,
+    "url": "",
+    "database": "mydb",
+    "password": "mypassword",
+    "name": "newDB",
+    "user": "admin",
+    "connector": "mysql"
   }
 }
