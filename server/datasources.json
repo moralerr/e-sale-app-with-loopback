@@ -1,22 +1,6 @@
 {
   "db": {
-    "host": "mysql",
-    "port": 3306,
-    "url": "",
-    "database": "mysqlDS",
-    "password": "mypassword",
     "name": "db",
-    "user": "root",
-    "connector": "mysql"
-  },
-  "mysqlDS": {
-    "host": "database",
-    "port": 3306,
-    "url": "",
-    "database": "esale-api",
-    "password": "mypassword",
-    "name": "mysqlDS",
-    "user": "root",
-    "connector": "mysql"
+    "connector": "memory"
   }
 }
