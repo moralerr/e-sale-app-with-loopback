@@ -1,0 +1,35 @@
+version: '2' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  database: # name of first service
+    image: mysql:latest # specify the image to build container from
+    container_name: mysqlDS
+    environment:
+      MYSQL_ROOT_PASSWORD: "mypassword"
+      MYSQL_DATABASE: "mysqlDS"
+    volumes:
+      - /mysql-datadir:/var/lib/mysql
+    restart: always
+    networks:
+      - bcbs
+
+  loopback: # name of second service
+    depends_on:
+      - database
+    image: moralerr/e-sale-app
+    container_name: esalocal
+    ports:
+      - "3000:3000" # specify port mapping
+    links:
+      - database:mysqlDS # link this service to the database service
+    restart: always
+    networks:
+      - bcbs
+
+volumes:
+  mysql-datadir:
+
+networks:
+  bcbs:
+    driver: bridge
