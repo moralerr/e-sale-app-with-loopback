@@ -36,7 +36,7 @@
     "public": false
   },
   "product": {
-    "dataSource": "db",
+    "dataSource": "mysqlDS",
     "public": true
   }
 }
