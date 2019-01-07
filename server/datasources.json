@@ -1,12 +1,12 @@
 {
   "db": {
-    "host": "localhost",
+    "host": "mysql",
     "port": 3306,
     "url": "",
     "database": "mysqlDS",
     "password": "mypassword",
     "name": "newDB",
-    "user": "",
+    "user": "root",
     "connector": "mysql"
   }
 }
