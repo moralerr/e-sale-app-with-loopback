@@ -12,8 +12,10 @@ services:
       - '3000:3000' # specify port mapping
     links:
       - mysql # link this service to the database service
+
   mysql: # name of first service
-    container_name: mysql
-    image: mysql:latest # specify the image to build container from
+    container_name: testMySql
+    image: mysql:5.7 # specify the image to build container from
     environment:
-      MYSQL_ROOT_PASSWORD: "mypassword"
+      MYSQL_PORT: "3306"
+      MYSQL_ROOT_PASSWORD: 'password'

@@ -2,5 +2,15 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "esaleDS": {
+    "host": "172.17.0.2",
+    "port": 3306,
+    "debug": "true",
+    "database": "esaleDS",
+    "password": "password",
+    "name": "esaleDS",
+    "user": "root",
+    "connector": "mysql"
   }
 }
